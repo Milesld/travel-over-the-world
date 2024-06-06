@@ -21,10 +21,10 @@ Including another URLconf
 #     path('admin/', admin.site.urls),
 # ]
 
-from django.urls import re_path
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    re_path("hello1", views.hello, name="hello"),
-    re_path("hello/<slug:name>", views.hellowithname),
+    path("", views.hello, name="hello"),
+    path("<slug:name>", views.hellowithname),
 ]
