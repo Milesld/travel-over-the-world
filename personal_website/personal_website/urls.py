@@ -30,4 +30,5 @@ urlpatterns = [
     path("main_page/", views.main_page),
     path("main_page1/", views.main_page1),
     path("main_page2/", views.main_page2),
+    path("index/", views.index)
 ]
