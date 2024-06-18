@@ -26,5 +26,8 @@ from . import views
 
 urlpatterns = [
     path("", views.hello, name="hello"),
-    path("<slug:name>", views.hellowithname),
+    # path("<slug:name>", views.hellowithname),
+    path("main_page/", views.main_page),
+    path("main_page1/", views.main_page1),
+    path("main_page2/", views.main_page2),
 ]
