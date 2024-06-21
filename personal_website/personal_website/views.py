@@ -23,6 +23,6 @@ def main_page2(request):
     return render(request, "main_page2.html", context)
 
 def index(request):
-    context = {}
-    context['hello'] = {"text":"Hello World!", "name":"ld"}  # key hello correponse to hello in template
-    return render(request, "index.html", context)
+    # context = {}
+    # context['hello'] = {"text":"Hello World!", "name":"ld"}  # key hello correponse to hello in template
+    return render(request, "index.html")
